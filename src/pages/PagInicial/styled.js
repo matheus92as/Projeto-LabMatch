@@ -6,10 +6,11 @@ export const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
     .Botões{
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 70%;   
         margin-top: 30px;
         button{
             border-radius: 35px;

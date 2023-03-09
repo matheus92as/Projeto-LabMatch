@@ -12,8 +12,7 @@ export const MainContainer = styled.div`
 	border-radius: 15px;
 	overflow: hidden;
 	transition: 0.5s;
-    animation-name: ${(props) => props.animacao};
-    animation-duration: 0.5s;
+    animation: ${(props) => props.animacao} 0.5s both;
     @keyframes caiEsquerda {
         from{
             opacity:1;
