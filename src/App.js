@@ -1,39 +1,32 @@
-import React, {useState} from 'react'
-import PagInicial from './pages/PagInicial/PagInicial';
-import Matches from './pages/Matches/Matches';
-import DoneAllRoundedIcon from '@mui/icons-material/DoneAllRounded';
-import KeyboardReturnRoundedIcon from '@mui/icons-material/KeyboardReturnRounded';
-import {AppMain,MainContainer,Header,TelaMatch, TelaInicio} from './styled'
+import React, { useState } from "react";
+import PagInicial from "./pages/PagInicial/PagInicial";
+import Matches from "./pages/Matches/Matches";
+import { AppMain, MainContainer } from "./styled";
+import Header from "./components/Header/Header";
 
 function App() {
-  const [telaInicial,setTelaInicial] = useState(true)
+  const [telaInicial, setTelaInicial] = useState(true);
 
   const telaMatch = () => {
-    setTelaInicial(false)
-  }
+    setTelaInicial(false);
+  };
   const telaInicio = () => {
-    setTelaInicial(true)
-  }
+    setTelaInicial(true);
+  };
 
   return (
     <AppMain>
       <MainContainer>
-        <Header>
-          <h2>LabMatch</h2>
-          {telaInicial ? 
-          <TelaMatch>
-            <DoneAllRoundedIcon onClick={telaMatch} color='success'/>
-          </TelaMatch> 
-          : 
-          <TelaInicio>
-            <KeyboardReturnRoundedIcon onClick={telaInicio}/>
-          </TelaInicio>}
-        </Header>
-        {telaInicial ? 
-        <PagInicial/> : <Matches/>}
+        <Header
+          telaMatch={telaMatch}
+          telaInicio={telaInicio}
+          telaInicial={telaInicial}
+          setTelaInicial={setTelaInicial}
+        />
+        {telaInicial ? <PagInicial /> : <Matches />}
       </MainContainer>
     </AppMain>
-  )
+  );
 }
 
-export default App
+export default App;

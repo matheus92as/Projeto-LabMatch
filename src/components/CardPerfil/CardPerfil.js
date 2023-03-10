@@ -4,7 +4,7 @@ import Luke from "../../assets/img/LukeSkywalker.jpg";
 function CardPerfil(props) {
   return (
     <>
-      {props.perfil.photo !== null ? (
+      {props.perfil.name !== undefined ? (
         props.perfil.name === "Luke Skywalker" ? (
           <MainContainer animacao={props.animacao}>
             <Background src={props.perfil.photo} />
