@@ -7,32 +7,39 @@ export const MainContainer = styled.div`
     align-items: center;
     text-align: center;
     width: 100%;
+    height: 100%;
+    position: relative;
     .Botões{
         display: flex;
         justify-content: space-between;
-        width: 70%;   
-        margin-top: 30px;
+        width: 60%;   
+        margin: 0px 0;
+        padding: 0;
+        z-index: 5;
+        position: absolute;
+        bottom: 20px;
         button{
             border-radius: 35px;
-            padding: 20px;
-            transition: 0.2s;
+            padding: 5px;
+            transition: 0.3s;
+            border: 1px solid;
+            background-color: inherit;
         }
         .like{
-            border-color: green;
+            border-color: #49ff00;
+            padding: 10px;
             :hover{
                 transform: scale(1.1);
-                transition: 0.2s;
-                background-color: #e4f8dc;
-                box-shadow: 2px 2px 5px #999999;
+                transition: 0.3s;
+                background-color: rgba(228,248,220, 0.2) ;
             }
         }
         .deslike{
-            border-color: red;
+            border-color: #ff0c00;
                 :hover{
                 transform: scale(1.1);
-                transition: 0.2s;
-                background-color: #fdd6d4;
-                box-shadow: 2px 2px 5px #999999;
+                transition: 0.3s;
+                background-color: rgba(253,214,212, 0.2);
             }
         }
     }

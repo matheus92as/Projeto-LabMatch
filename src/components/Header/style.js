@@ -7,13 +7,20 @@ export const MainContainer = styled.div`
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #024786;
     margin-top: 0px;
     margin-bottom: 18px;
-    color: #024786;
-    h2{
+    color: #F40000;
+    .brand{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         position: absolute;
-        margin-bottom: 30px; 
+        font-family: 'Tilt Neon', cursive;
+        img{
+            width: 25px;
+            height: 30px;
+            margin: 5px;
+        }
     }
 `
 export const TelaMatch = styled.div`

@@ -8,6 +8,7 @@ export const AppMain = styled.div`
     text-align: center;
     background-color: #212121;
     height: 100vh;
+    /* overflow: hidden; */
 `
 export const MainContainer = styled.div`
     display: flex;
@@ -17,6 +18,7 @@ export const MainContainer = styled.div`
     text-align: center;
     border: 3px solid black;
     background-color: whitesmoke;
+    overflow: hidden;
     border-radius: 15px;
     height: 600px;
     width: 400px;

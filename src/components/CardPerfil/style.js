@@ -6,13 +6,15 @@ export const MainContainer = styled.div`
     justify-content: center;
 	align-items: center;
 	position: relative;
-	height: 430px;
-    width: 350px;
-    box-shadow: 5px 5px 10px black;
-	border-radius: 15px;
+	height: 530px;
+    width: 97%;
+    margin-bottom: 10px;
+    box-shadow: 2px 5px 5px #bcbcbc;
+	border-radius: 10px;
 	overflow: hidden;
 	transition: 0.5s;
     animation: ${(props) => props.animacao} 0.5s both;
+    font-family: 'Tilt Neon', cursive;
     @keyframes caiEsquerda {
         from{
             opacity:1;
@@ -34,15 +36,16 @@ export const MainContainer = styled.div`
         }   
     }
     img{
-        width: 100%;
+        height: ${(props) => (props.height === true ? "100%" : "auto")};
+        width: ${(props) => (props.width === true ? "100%" : "auto")};
         z-index: 1;
     }
     .dadosPerfil{
         height: 30%;
         width: 100%;
 	    position: absolute;
-        bottom: 0;
-        background-image: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+        bottom: 0px;
+        background-image: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
         color: white;
         display: flex;
         flex-direction: column;
@@ -52,7 +55,9 @@ export const MainContainer = styled.div`
         z-index: 2;
         p{
             margin: 5px 20px;
+            margin-bottom: 55px;
         }
+      
     }
     .NomeIdade{
         display: flex;

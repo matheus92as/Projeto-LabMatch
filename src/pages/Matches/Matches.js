@@ -29,9 +29,10 @@ function Matches() {
     <MainContainer>
       <Lista>{listaMatches}</Lista>
       <Button
+      sx={{ fontSize: 15, color: "#ff0c00"  }}
         onClick={() => cleanMatchs()}
         size="small"
-        variant="outlined"
+        // variant="outlined"
         startIcon={<GroupRemoveRoundedIcon />}
       >
         Limpar Matches
