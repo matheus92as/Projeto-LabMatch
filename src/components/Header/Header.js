@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <MainContainer>
       <div className="brand">
-        <img src={Logo} alt="chama vermelha"/>
+        <img src={Logo} alt="chama vermelha" />
         <h2>LabMatch</h2>
       </div>
       {props.telaInicial ? (

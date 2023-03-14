@@ -21,8 +21,7 @@ export const EscolhePessoa = (id) => {
 
 export const PegaPerfil = (att) => {
   const [profiles, setProfiles] = useState({});
-  // eslint-disable-next-line
-  const [animation, setAnimation] = useState("");
+  const animation = "";
 
   async function catchPerfil() {
     try {
@@ -62,5 +61,5 @@ export const Matchs = () => {
     }
   }
 
-  return {matches, catchMatch, cleanMatchs};
+  return { matches, catchMatch, cleanMatchs };
 };

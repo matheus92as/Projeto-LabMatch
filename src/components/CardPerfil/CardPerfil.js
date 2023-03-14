@@ -29,11 +29,7 @@ function CardPerfil(props) {
     <>
       {props.perfil.name !== undefined ? (
         props.perfil.name === "Luke Skywalker" ? (
-          <MainContainer
-            animacao={props.animacao}
-            height={true}
-            width={false}
-          >
+          <MainContainer animacao={props.animacao} height={true} width={false}>
             <Background src={props.perfil.photo} />
             <img src={Luke} alt="Foto de Perfil"></img>
             <div className="dadosPerfil">

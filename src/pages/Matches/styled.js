@@ -13,7 +13,7 @@ export const MainContainer = styled.div`
     margin-left: 15px;
     margin-top: 10px;
     font-weight: bold;
-    font-family: 'Tilt Neon', cursive;
+    font-family: "Tilt Neon", cursive;
   }
 `;
 export const Lista = styled.div`
@@ -25,7 +25,6 @@ export const Lista = styled.div`
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 5px;
-    
   }
   ::-webkit-scrollbar-track {
     background: #bcbcbc;
