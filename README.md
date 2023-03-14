@@ -18,8 +18,6 @@ Se os perfis pararam de aparecer é porque você já alcançou o limite de corre
 
 </br>
 
-### Projeto LabMatch
-
 ### Funcionalidades:
 - Like e deslike mudam o card apresentado.
 - Matches aparecem em uma segunda tela, acessível no topo da tela principal.
