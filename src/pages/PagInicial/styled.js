@@ -7,7 +7,6 @@ export const MainContainer = styled.div`
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 100%;
     position: relative;
     .Botões{
         display: flex;
@@ -42,5 +41,11 @@ export const MainContainer = styled.div`
                 background-color: rgba(253,214,212, 0.2);
             }
         }
+    }
+    @media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+        margin-bottom: 25%;
+        .Botões{
+           /* bottom: 105px; */
+        } 
     }
 `
